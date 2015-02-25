@@ -53,7 +53,8 @@ ARTICLE_URL     = '{date:%Y}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
 # THEME = 'simple'
 # THEME = 'pelican-default'
-THEME = '4pi-theme'
+# THEME = '4pi-theme'
+THEME = 'foundation-salado'
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 PLUGIN_PATHS = ["plugins"]
