@@ -14,8 +14,6 @@ DEFAULT_LANG = u'de'
 DEFAULT_DATE_FORMAT = '%d.%m.%Y'
 STATIC_PATHS = [
     'images',
-    'xml',
-    'tiles', 
     'preview', 
     'extras/robots.txt',
     'extras/humans.txt',
@@ -58,11 +56,12 @@ THEME = 'foundation-salado'
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["neighbors", "gps", "openpano"]
+PLUGINS = ["neighbors", "gps", "pannellum"]
 
 PANORAMA_PREVIEW_PATH = 'preview'
-XML_FOLDER = 'openpanoxml'
+JSON_FOLDER = 'json'
 TILE_FOLDER = 'tiles'
-SALADO_CONFIG_FILE = 'salado.xml'
-SALADO_DEBUG = True
+PANNELLUM_DEBUG = True
+# PANNELLUM_DEBUG = False
+FULLSIZE_PANORAMAS = 'panos'
 

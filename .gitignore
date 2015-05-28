@@ -6,6 +6,7 @@ theme
 my-plugins
 plugins
 content/tiles
+content/panos
 *.pid
 *.swp
 *~
