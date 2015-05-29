@@ -45,7 +45,8 @@ SOCIAL = (('GitHub', 'https://github.com/peterreimer'),
           ('360Cities', 'http://www.360cities.net/profile/reimer'),)
 
 DEFAULT_PAGINATION = 10
-TEMPLATE_PAGES = {'map.html': 'karte.html'}
+TEMPLATE_PAGES = {'map.html': 'karte.html',
+                  'pannellum.html':'pannellum.html'}
 
 ARTICLE_URL     = '{date:%Y}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
