@@ -1,0 +1,89 @@
+/*
+body {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    background: url("/theme/images/handmadepaper.png") repeat scroll 0 0 transparent;
+}
+h1, h2, h3, h4, h5 {
+    font-family: "Oswald";
+    font-weight: 500;
+}
+h2.entry-title {
+    margin-bottom: 0.1em;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+*/
+header {
+    margin-bottom: 0.5em;
+}
+#post-list {
+    list-style: none;
+}
+#post-list li {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+.post-info {
+    margin-bottom: 0.25em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+.social a {
+	background-repeat: no-repeat;
+	background-position: 3px 2px;
+	padding-left: 25px;
+}
+
+	/* Icons */
+	.social a[href*='about.me'] {background-image: url('../images/icons/aboutme.png');}
+	.social a[href*='bitbucket.org'] {background-image: url('../images/icons/bitbucket.png');}
+	.social a[href*='delicious.com'] {background-image: url('../images/icons/delicious.png');}
+	.social a[href*='digg.com'] {background-image: url('../images/icons/digg.png');}
+	.social a[href*='facebook.com'] {background-image: url('../images/icons/facebook.png');}
+	.social a[href*='gitorious.org'] {background-image: url('../images/icons/gitorious.png');}
+	.social a[href*='github.com'],
+	.social a[href*='git.io'] {background-image: url('../images/github.png');}
+
+/* Salado Player */
+#PlayerWrapper {
+    height: 25em;
+}
+
+#map {
+     height: 400px;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 2px;
+}
+
+.post-navigation div span {
+    color: #999;
+    display: block;
+    font-size: 80%;
+}
+.post-previous {
+    float: left;
+    padding-left: 40px;
+}
+.post-next {
+    float: right;
+    padding-right: 40px;
+    text-align: right;
+}
+.post-navigation div a:after {
+    color: #ccc;
+    font-size: 56px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: -11px;
+    position: absolute;
+    top: 34%;
+}
+.post-next a:after {
+    content: "»";
+    right: 0;
+}
+.post-previous a:after {
+    content: "«";
+    left: 0;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if IE 8]>               <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ DEFAULT_LANG }}" > <!--<![endif]-->
+<head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/foundation.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}">
+    <script src="{{ SITEURL }}/theme/js/modernizr.js"></script>
+    <script src="{{ SITEURL }}/theme/js/jquery.js"></script>
+    {% block pannellum %}
+    {% endblock pannellum %}
+    {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+    {% endif %}
+    {% if FEED_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+    {% endif %}
+    {% if FEED_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
+    {% if CATEGORY_FEED_ATOM and category %}
+    <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Categories Atom Feed" />
+    {% endif %}
+    {% if CATEGORY_FEED_RSS and category %}
+    <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Categories RSS Feed" />
+    {% endif %}
+    {% if TAG_FEED_ATOM and tag %}
+    <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Tags Atom Feed" />
+    {% endif %}
+    {% if TAG_FEED_RSS and tag %}
+    <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
+    {% endif %}
+    {% endblock head %}
+</head>
+
+<body>
+        <div class="large-12 columns">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                <!-- Title Area -->
+                    <li class="name">
+                        <h1><a href="{{ SITEURL }}/">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                </ul>
+                <section class="top-bar-section">
+                    <ul class="right">
+                    {% for title, link in MENUITEMS %}
+                        <li><a href="{{ link }}">{{ title }}</a></li>
+                    {% endfor %}
+                    {% if DISPLAY_PAGES_ON_MENU -%}
+                    {% for page in PAGES %}
+                        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                    {% endfor %}
+                    {% endif %}
+                    {% if DISPLAY_CATEGORIES_ON_MENU -%}
+                    {% for cat, null in categories %}
+                        <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    {% endfor %}
+                    {% endif %}
+                    <li>
+                        <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" title="Subscribe to Feed" type="application/atom+xml" rel="alternate">
+                            <img src="{{ SITEURL }}/theme/images/rss.png" alt="Feed" />
+                        </a>
+                    </li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+
+    <div class="row">
+        <div class="large-9 columns">
+
+        {% block content %}
+        {% endblock %}
+        </div>
+        <div class="large-3 columns">
+
+        {% block extras %}
+        {% if SOCIAL or FEED_ALL_ATOM or FEED_ALL_RSS %}
+            <h3>und sonst?</h3>
+            <ul class="no-bullet social">
+
+            {% for name, link in SOCIAL %}
+                <li><a href="{{ link }}">{{ name }}</a></li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+
+        {% if LINKS %}
+                <h3>lesenswert</h3>
+                <ul class="no-bullet">
+                {% for name, link in LINKS %}
+                    <li><a href="{{ link }}">{{ name }}</a></li>
+                {% endfor %}
+                </ul>
+        {% endif %}
+        {% endblock %}
+        
+        </div>
+    </div>
+    
+
+    <footer class="row">
+        <div class="large-12 columns">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </div>
+    </footer>
+{% include 'foundation.html' %}
+</body>
+</html>

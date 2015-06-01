@@ -14,7 +14,8 @@ DEFAULT_LANG = u'de'
 DEFAULT_DATE_FORMAT = '%d.%m.%Y'
 STATIC_PATHS = [
     'images',
-    'preview', 
+    'preview',
+    'tiles',
     'extras/robots.txt',
     'extras/humans.txt',
     'extras/favicon.ico',
@@ -52,8 +53,7 @@ ARTICLE_URL     = '{date:%Y}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
 # THEME = 'simple'
 # THEME = 'pelican-default'
-# THEME = '4pi-theme'
-THEME = 'foundation-salado'
+THEME = 'theme'
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 PLUGIN_PATHS = ["plugins"]

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section id="content">
+
+<ol id="post-list">
+{% for article in articles_page.object_list %}
+    <li>
+        <article class="hentry">
+            <div class=row>
+                <div class="large-12 columns">
+                    <header>
+                        <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+                        <p class="post-info">
+                            <span title="{{ article.date.isoformat() }}">
+                            {{ article.locale_date }}</span> /
+                            <span></span>
+                          {% if article.category %}
+                          <a href="{{ SITEURL }}/{{ article.category.url }}">{{
+                          article.category }}</a>
+                          {% endif %}
+                        </p>
+                    </header>
+                </div>
+            </div>
+            <div class=row>
+                {% if article.pano_ids %}
+                <div class="large-12 columns">
+                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{{ article.title|striptags }}">
+                        <img src="{{ SITEURL }}/{{ TILE_FOLDER }}/{{ article.pano_id }}/{{ article.pano_id }}.jpg" />
+                    </a>
+                    {{ article.summary }}
+                </div>
+                {% else%}
+                <div class="large-12 columns"> {{ article.summary }} </div><!-- /.entry-content -->
+                {% endif%}
+            </div>
+        </article>
+    </li>
+{% endfor %}
+</ol><!-- /#posts-list -->
+{% include 'pagination.html' %}
+</section><!-- /#content -->
+{% endblock content %}

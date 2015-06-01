@@ -1,0 +1,19 @@
+<div class="row post-navigation">
+{% if article.prev_article %}
+    <div class="post-previous small-6 large-6 columns">
+        <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
+           <span>Zurück</span>
+           {{ article.prev_article.title }}
+        </a>
+    </div>
+{% endif %}
+{% if article.next_article %}
+    <div class="post-next small-6 large-6 columns">
+        <a href="{{ SITEURL }}/{{ article.next_article.url}}"
+           title="{{ article.next_article.title }}">
+            <span>Vor</span>
+           {{ article.next_article.title }}
+        </a>
+    </div>
+{% endif %}
+</div>   
