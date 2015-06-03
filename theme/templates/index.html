@@ -27,8 +27,9 @@
                 {% if article.pano_ids %}
                 <div class="large-12 columns">
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{{ article.title|striptags }}">
-                        <img src="{{ SITEURL }}/{{ TILE_FOLDER }}/{{ article.pano_id }}/{{ article.pano_id }}.jpg" />
+                        <img src="{{ SITEURL }}/{{ TILE_FOLDER }}/{{ article.pano_ids }}/thumbs/preview.jpg" />
                     </a>
+                    {{ article.pano_ids }}
                     {{ article.summary }}
                 </div>
                 {% else%}

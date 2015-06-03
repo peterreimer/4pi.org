@@ -57,7 +57,7 @@ THEME = 'theme'
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["neighbors", "gps", "pannellum"]
+PLUGINS = ['neighbors', 'pelican-pannellum', 'sitemap']
 
 PANORAMA_PREVIEW_PATH = 'preview'
 JSON_FOLDER = 'json'

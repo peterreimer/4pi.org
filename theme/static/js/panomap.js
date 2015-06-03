@@ -1,11 +1,11 @@
-function getLatLon(container) {
+/*function getLatLon(container) {
     var geo = $(".geo", container).attr('title').split(',');
     var latlng = L.latLng(geo);
     console.log(latlng);
     return latlng
-}
-//var map_data = "//" + location.host + location.pathname
-
+}*/
+var map_data = "//" + location.host + location.pathname
+console.log(map_data);
 $.getJSON(map_data, function(data) {
     
     // SKOBBLER
