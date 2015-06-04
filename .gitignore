@@ -2,7 +2,7 @@ cache
 output
 my-plugins
 plugins
-content/tiles
+content/sizes
 content/panos
 *.pid
 *.swp
