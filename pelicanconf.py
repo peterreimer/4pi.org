@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
+HOME = os.path.expanduser("~")
 
 AUTHOR = u'Peter Reimer'
 SITENAME = u'4pi.org'
 #SITESUBTITLE = u'Spherical panoramas'
-SITEURL = ''
-#SITEURL = 'http://4pi.org'
+#SITEURL = ''
+SITEURL = 'http://calvin/~peter/4pi/'
 CSS_FILE = '4pi.css'
 TIMEZONE = 'Europe/Berlin'
 
@@ -15,7 +17,7 @@ DEFAULT_DATE_FORMAT = '%d.%m.%Y'
 STATIC_PATHS = [
     'images',
     'preview',
-    'tiles',
+    'sizes',
     'extras/robots.txt',
     'extras/humans.txt',
     'extras/favicon.ico',
@@ -59,9 +61,11 @@ THEME = 'theme'
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ['neighbors', 'pelican-pannellum', 'sitemap']
 
-PANORAMA_PREVIEW_PATH = 'preview'
 JSON_FOLDER = 'json'
-TILE_FOLDER = 'tiles'
+SIZES_FOLDER = 'sizes'
+TILE_FOLDER = os.path.join(HOME, 'public_html', 'tiles')
+TILE_URL = 'http://localhost/~peter/tiles'
+# TILE_URL = 'http://tiles.4pi.org'
 PANNELLUM_DEBUG = True
 # PANNELLUM_DEBUG = False
 FULLSIZE_PANORAMAS = 'panos'

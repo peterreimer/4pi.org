@@ -19,6 +19,7 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 DELETE_OUTPUT_DIRECTORY = True
 
 PANNELLUM_DEBUG = False
+TILE_URL = 'http://tiles.4pi.org'
 
 # Following items are often useful when publishing
 

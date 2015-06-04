@@ -4,7 +4,9 @@ PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
+#OUTPUTDIR=$(BASEDIR)/output
+OUTPUTDIR=$(HOME)/public_html/4pi
+TILESDIR=$(HOME)/public_html/tiles
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -16,6 +18,7 @@ SSH_HOST=www.reimer-web.de
 SSH_PORT=22
 SSH_USER=peter
 SSH_TARGET_DIR=/var/www/beta.4pi.org
+TILES_TARGET_DIR=/var/www/tiles.4pi.org
 
 S3_BUCKET=my_s3_bucket
 
@@ -71,6 +74,7 @@ ssh_upload: publish
 
 rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(TILESDIR)/ $(SSH_USER)@$(SSH_HOST):$(TILES_TARGET_DIR) --cvs-exclude
 
 dropbox_upload: publish
 	cp -r $(OUTPUTDIR)/* $(DROPBOX_DIR)
