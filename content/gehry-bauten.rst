@@ -5,6 +5,6 @@ Gehry-Bauten
 :category: Panoramas
 :tags: Düsseldorf, Medienhafen
 :template: panorama
-:pano_ids: gehry-bauten
+:scene_id: gehry-bauten
 
 Gehry-bauten

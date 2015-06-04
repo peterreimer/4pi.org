@@ -5,6 +5,6 @@ Mafra
 :category: Panoramas
 :tags: Portugal, Mafra
 :template: panorama
-:pano_ids: mafra
+:scene_id: mafra
 
 Portugal
