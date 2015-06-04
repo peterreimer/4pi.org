@@ -24,12 +24,12 @@
                 </div>
             </div>
             <div class=row>
-                {% if article.pano_ids %}
+                {% if article.scene_id %}
                 <div class="large-12 columns">
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{{ article.title|striptags }}">
-                        <img src="{{ SITEURL }}/{{ TILE_FOLDER }}/{{ article.pano_ids }}/thumbs/preview.jpg" />
+                        <img src="{{ SITEURL }}/{{ SIZES_FOLDER }}/{{ article.scene_id }}/{{ article.scene_id }}-preview.jpg" />
                     </a>
-                    {{ article.pano_ids }}
+                    {{ article.scene_id }}
                     {{ article.summary }}
                 </div>
                 {% else%}
