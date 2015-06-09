@@ -8,7 +8,7 @@ AUTHOR = u'Peter Reimer'
 SITENAME = u'4pi.org'
 #SITESUBTITLE = u'Spherical panoramas'
 #SITEURL = ''
-SITEURL = 'http://calvin/~peter/4pi/'
+SITEURL = 'http://calvin/~peter/4pi'
 CSS_FILE = '4pi.css'
 TIMEZONE = 'Europe/Berlin'
 
