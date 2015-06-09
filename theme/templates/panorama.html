@@ -23,18 +23,19 @@
           <a href="{{ SITEURL }}/{{ article.category.url }}">{{
           article.category }}</a>
           {% endif %}
-        <span class="geo" title="{{ article.latlon }}"></span>
-        <span>latitude{{ article.lat }}</span>
         </p>
   </header>
-  <div class="entry-content">
-    <iframe src="{{ TILE_URL }}/pannellum.html?tour={{ article.scene_id }}/tour.json"
+  <div class="row entry-content">
+      <div class="large-8 columns">
+          <iframe src="{{ TILE_URL }}/pannellum.html?tour={{ article.scene_id }}/tour.json"
             style="border-style:none;width:100%;height:390px;"
             allowfullscreen
             title="pannellum panorama viewer"></iframe>
 
-      <p>{{ article.content }}</p>
-        
+          <p>{{ article.content }}</p>
+      </div>
+      <div class="large-4 columns" id="map">
+      </div>
 
   </div><!-- /.entry-content -->
   <footer class="post-info">
