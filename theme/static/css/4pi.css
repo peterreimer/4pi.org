@@ -44,14 +44,15 @@ header {
 	.social a[href*='git.io'] {background-image: url('../images/github.png');}
 
 /* Salado Player */
-#PlayerWrapper {
-    height: 25em;
-}
 
 #map {
      height: 400px;
 }
-
+#pannellum {
+    border-style:none;
+    width:100%;
+    height:400px;
+}
 .leaflet-popup-content-wrapper {
     border-radius: 2px;
 }
