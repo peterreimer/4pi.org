@@ -1,11 +1,12 @@
 Gehry-Bauten
 ============
 
-:date: 2013-05-17
+:date:     2013-05-17
 :category: Panoramas
-:tags: Düsseldorf, Medienhafen
+:tags:     Düsseldorf, Medienhafen
 :template: panorama
-:scene_id: gehry-bauten
+:scene:    gehry-bauten
+:tour:     medienhafen
 
 Gehry-bauten
 

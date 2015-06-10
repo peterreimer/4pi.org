@@ -5,7 +5,7 @@ Palácio Nacional de Mafra
 :category: Panoramas
 :tags: Portugal, Mafra
 :template: panorama
-:scene_id: mafra
+:scene: mafra
 
 Der `Palácio Nacional de Mafra`_, zu deutsch Nationalpalast von Mafra,
 ist die größte Schloss- und Klosteranlage Portugals.
