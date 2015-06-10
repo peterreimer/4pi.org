@@ -1,12 +1,6 @@
-/*function getLatLon(container) {
-    var geo = $(".geo", container).attr('title').split(',');
-    var latlng = L.latLng(geo);
-    console.log(latlng);
-    return latlng
-}*/
-var map_data = "//" + location.host + location.pathname
-console.log(map_data);
+var map_data = "//" + location.host + location.pathname + "loc.json"
 $.getJSON(map_data, function(data) {
+    
     
     // SKOBBLER
     var skobblerApiKey = "3c996ca814d3ba1d95f98d4a8cdca880",
@@ -24,9 +18,14 @@ $.getJSON(map_data, function(data) {
     var panopins = [];
     var allMarkers = [];
     
-    $.each(data, function( index, value ) {
-        var position = L.latLng(value[0]);
-        panopin = L.marker(position).bindPopup("<b> PANO </b>").openPopup();
+    $.each(data, function( label, details ) {
+        var position = L.latLng(details.lat, details.lng);
+        var title = details.title;
+        var label = ([
+            "<strong>" + title+ "</strong><br />",
+            "<a href=" + details.url + ">open</a>"
+            ]).join("\n");
+        panopin = L.marker(position).bindPopup(label).openPopup();
         panopins.push(panopin);
         allMarkers.push(position);
     });   

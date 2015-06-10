@@ -5,7 +5,6 @@
 
 {% block pannellum %}
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/leaflet.css" />
-<script src="{{ SITEURL }}/theme/js/leaflet.js"></script>
 {% endblock pannellum %}
 
 {% block content %}
@@ -27,15 +26,18 @@
   </header>
   <div class="row entry-content">
       <div class="large-8 columns">
-          <iframe src="{{ TILE_URL }}/pannellum.html?tour={{ article.scene_id }}/tour.json"
+          <iframe src="{{ TILE_URL }}/pannellum.html?tour={{ article.scene }}/tour.json"
             style="border-style:none;width:100%;height:390px;"
             allowfullscreen
             title="pannellum panorama viewer"></iframe>
 
           <p>{{ article.content }}</p>
+          <p>tour {{ article.scenes }}</p>
       </div>
       <div class="large-4 columns" id="map">
       </div>
+        <script src="{{ SITEURL }}/theme/js/leaflet.js"></script>
+        <script src="{{ SITEURL }}/theme/js/panomap.js"></script>
 
   </div><!-- /.entry-content -->
   <footer class="post-info">
