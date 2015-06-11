@@ -14,14 +14,8 @@ h2.entry-title {
 header {
     margin-bottom: 0.5em;
 }
-.top-bar {
-    background-color: #ffffff;
-}
-.top-bar section li a {
-    background-color: #ffffff;
-}
 .top-bar .name img {
-    height: 50px;
+    height: 40px;
 }
 #post-list {
     list-style: none;
