@@ -21,9 +21,10 @@ $.getJSON(map_data, function(data) {
     $.each(data, function( label, details ) {
         var position = L.latLng(details.lat, details.lng);
         var title = details.title;
+        var url = [site_url,details.url].join("/");
         var label = ([
             "<strong>" + title+ "</strong><br />",
-            "<a href=" + details.url + ">open</a>"
+            "<a href=" + url + ">open</a>"
             ]).join("\n");
         panopin = L.marker(position).bindPopup(label).openPopup();
         panopins.push(panopin);
