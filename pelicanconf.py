@@ -10,7 +10,7 @@ SITENAME = u'4pi.org'
 # SITEURL = ''
 # SITEURL = 'http://localhost/~peter/4pi'
 SITEURL = 'http://ultra02/~reimer/4pi'
-CSS_FILE = '4pi.css'
+CSS_FILE = 'app.css'
 TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = u'de'

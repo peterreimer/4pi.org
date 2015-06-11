@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}{{ article.title}} &mdash; {{ SITENAME }}
-
+{% block title %}
+    {{ article.title}} &mdash; {{ SITENAME }}
 {% endblock title %}
 
 {% block pannellum %}
@@ -48,10 +48,7 @@
 {% include 'previous-next.html' %}
 {% endblock %}
 
-{% block extras %}
-<h3>in der Nähe:</h3>
-    <div id="map">
-    </div>
+{% block javascript %}
 <script type="text/javascript" src="{{ SITEURL }}/theme/js/panomap.js"></script>
-{% endblock %}
+{% endblock javascript %}
 

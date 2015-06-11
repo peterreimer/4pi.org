@@ -1,19 +1,27 @@
-/*
 body {
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     background: url("/theme/images/handmadepaper.png") repeat scroll 0 0 transparent;
 }
 h1, h2, h3, h4, h5 {
-    font-family: "Oswald";
+    font-family: "Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
     font-weight: 500;
 }
 h2.entry-title {
     margin-bottom: 0.1em;
     text-shadow: 1px 1px 0 #FFFFFF;
 }
-*/
+
 header {
     margin-bottom: 0.5em;
+}
+.top-bar {
+    background-color: #ffffff;
+}
+.top-bar section li a {
+    background-color: #ffffff;
+}
+.top-bar .name img {
+    height: 50px;
 }
 #post-list {
     list-style: none;

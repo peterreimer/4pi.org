@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<!--[if IE 8]>               <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ DEFAULT_LANG }}" > <!--<![endif]-->
+<html class="no-js" lang="{{ DEFAULT_LANG }}" >
 <head>
     {% block head %}
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <!--<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/foundation.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}">
     <script src="{{ SITEURL }}/helper.js"></script>
-    <script src="{{ SITEURL }}/theme/js/modernizr.js"></script>
-    <script src="{{ SITEURL }}/theme/js/jquery.js"></script>
+    <script src="{{ SITEURL }}/theme/js/vendor/modernizr.js"></script>
     {% block pannellum %}
     {% endblock pannellum %}
     {% if FEED_ALL_ATOM %}
@@ -47,7 +46,7 @@
                 <ul class="title-area">
                 <!-- Title Area -->
                     <li class="name">
-                        <h1><a href="{{ SITEURL }}/">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                        <h1><a href="{{ SITEURL }}/"><img src="{{ SITEURL }}/theme/images/logo-bw.svg" alt="{{ SITENAME }} {% if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}" /></a></h1>
                     </li>
                     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
                 </ul>
@@ -119,6 +118,13 @@
                 </address><!-- /#about -->
         </div>
     </footer>
-{% include 'foundation.html' %}
+    <script src="{{ SITEURL }}/theme/js/vendor/jquery.js"></script>
+    <script src="{{ SITEURL }}/theme/js/foundation.min.js"></script>
+    <script src="{{ SITEURL }}/theme/js/foundation/foundation.topbar.js"></script>
+    {% block javascript %}
+    {% endblock javascript %}
+    <script> 
+        $(document).foundation(); 
+    </script>
 </body>
 </html>
