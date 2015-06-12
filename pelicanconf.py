@@ -31,7 +31,7 @@ TRANSLATION_FEED_ATOM = None
 
 DISPLAY_CATEGORIES_ON_MENU = True
 MENUITEMS = (
-    ('Karte', 'karte.html'),
+    ('Karte', '/'.join((SITEURL,'karte.html'))),
 )
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
@@ -49,8 +49,7 @@ SOCIAL = (('GitHub', 'https://github.com/peterreimer'),
           ('360Cities', 'http://www.360cities.net/profile/reimer'),)
 
 DEFAULT_PAGINATION = 10
-TEMPLATE_PAGES = {'map.html': 'karte.html',
-                  'pannellum.html':'pannellum.html'}
+TEMPLATE_PAGES = {'map.html': 'karte.html',}
 
 ARTICLE_URL     = '{date:%Y}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
@@ -61,13 +60,16 @@ THEME = 'theme'
 # RELATIVE_URLS = True
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ['neighbors', 'pelican-pannellum', 'sitemap']
+SITEMAP = {'format': 'xml'}
+
+PANNELLUM = {'debug' : True,
+             'sizes_folder' : 'sizes',
+             'tile_folder' : os.path.join(HOME, 'public_html', 'tiles')}
 
 JSON_FOLDER = 'json'
 SIZES_FOLDER = 'sizes'
-TILE_FOLDER = os.path.join(HOME, 'public_html', 'tiles')
 # TILE_URL = 'http://localhost/~peter/tiles'
 TILE_URL = 'http://ultra02/~reimer/tiles'
-PANNELLUM_DEBUG = True
 # PANNELLUM_DEBUG = False
 FULLSIZE_PANORAMAS = 'panos'
 

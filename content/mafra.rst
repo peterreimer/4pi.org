@@ -1,7 +1,7 @@
 Palácio Nacional de Mafra
 =========================
 
-:date: 2013-11-16
+:date: 2015-6-12
 :category: Panoramas
 :tags: Portugal, Mafra
 :template: panorama
