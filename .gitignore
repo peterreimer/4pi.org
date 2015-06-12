@@ -8,3 +8,8 @@ content/panos
 *.swp
 *~
 *.py[cod]
+
+# eclipse
+.project
+.pydevproject
+.settings
