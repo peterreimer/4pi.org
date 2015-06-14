@@ -4,6 +4,16 @@
 Panorama Weltkarte &mdash; {{ SITENAME }}
 {% endblock %}
 
+{% block pannellum %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/leaflet.css" />
+{% endblock pannellum %}
+
 {% block content %}        
-<h1>Weltkarte</h1>
+    <div class="large-12 columns" id="worldmap">
+    </div>
 {% endblock %}
+
+{% block javascript %}
+<script src="{{ SITEURL }}/theme/js/leaflet.js"></script>
+<script type="text/javascript" src="{{ SITEURL }}/theme/js/worldmap.js"></script>
+{% endblock javascript %}

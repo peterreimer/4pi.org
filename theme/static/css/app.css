@@ -48,6 +48,9 @@ header {
 
 /* Salado Player */
 
+#worldmap {
+     height: 600px;
+}
 #map {
      height: 400px;
 }
