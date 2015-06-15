@@ -16,6 +16,7 @@
 
 <section id="content">
 {% for article in articles_page.object_list %}
+    {% if not article.hide_in_index %}
     <article class="hentry">
         <div class=row>
             <div class="large-12 columns">
@@ -47,6 +48,7 @@
             {% endif%}
         </div>
     </article>
+    {% endif %}
 {% endfor %}
 
 {% include 'pagination.html' %}

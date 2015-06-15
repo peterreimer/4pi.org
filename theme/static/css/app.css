@@ -14,6 +14,11 @@ body {
     color: #ffffff;
     text-shadow: 0 0 1px #000, 0 0 2px rgba(0, 0, 0, 0.9);
 }
+.doormat {
+    margin-bottom: 0;
+    background-color: #51454A;
+    color: #ffffff;
+}
 h1, h2, h3, h4, h5 {
     font-family: "Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
     font-weight: 500;
