@@ -7,11 +7,14 @@ Panorama Weltkarte &mdash; {{ SITENAME }}
 {% block pannellum %}
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/leaflet.css" />
 {% endblock pannellum %}
+    
 
-{% block content %}        
-    <div class="large-12 columns" id="worldmap">
-    </div>
-{% endblock %}
+{% block content %}
+<div class="large-12 columns" id="worldmap">
+</div>
+<p>{{ page.content }}</p>
+{% endblock content %}
+
 
 {% block javascript %}
 <script src="{{ SITEURL }}/theme/js/leaflet.js"></script>
