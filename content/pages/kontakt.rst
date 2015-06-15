@@ -1,5 +1,7 @@
-Title: Kontakt
-Date: 2013-05-13
+Kontakt
+=======
+
+:date: 2013-05-13
 
 Peter Reimer  
 Höchterdyk 39  
