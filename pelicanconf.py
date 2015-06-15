@@ -7,8 +7,8 @@ HOME = os.path.expanduser("~")
 AUTHOR = u'Peter Reimer'
 SITENAME = u'4pi.org'
 #SITESUBTITLE = u'Spherical panoramas'
-# SITEURL = ''
-SITEURL = 'http://localhost/~peter/4pi'
+SITEURL = ''
+# SITEURL = 'http://localhost/~peter/4pi'
 # SITEURL = 'http://ultra02/~reimer/4pi'
 CSS_FILE = 'app.css'
 TIMEZONE = 'Europe/Berlin'
@@ -30,9 +30,9 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 DISPLAY_CATEGORIES_ON_MENU = True
-MENUITEMS = (
-    ('Karte', '/'.join((SITEURL,'karte.html'))),
-)
+#MENUITEMS = (
+#    ('Karte', '/'.join((SITEURL,'karte.html'))),
+#)
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('PanoTools.org Wiki', 'http://wiki.panotools.org'),
@@ -48,8 +48,14 @@ SOCIAL = (('GitHub', 'https://github.com/peterreimer'),
           ('Delicious','https://delicious.com/preimer'),
           ('360Cities', 'http://www.360cities.net/profile/reimer'),)
 
+#PAGINATION_PATTERNS = (
+#    (1, '{base_name}/', '{base_name}/index.html'),
+#    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+#)
+
+
 DEFAULT_PAGINATION = 10
-TEMPLATE_PAGES = {'map.html': 'karte.html',}
+# TEMPLATE_PAGES = {'map.html': 'karte.html',}
 
 ARTICLE_URL     = '{date:%Y}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'

@@ -11,31 +11,52 @@
 
 
 <section id="content" class="body panorama">
-  <header>
-    <h2 class="entry-title">
-      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-         title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-        <p class="post-info">
-            <span title="{{ article.date.isoformat() }}">
-            {{ article.locale_date }}</span> /
-          {% if article.category %}
-          <a href="{{ SITEURL }}/{{ article.category.url }}">{{
-          article.category }}</a>
-          {% endif %}
-        </p>
-  </header>
   <div class="row entry-content">
-      <div class="large-8 columns">
+      <div class="large-12 columns">
           <iframe id="pannellum" src="{{ PANNELLUM.tile_url }}/pannellum.html?tour={{ article.scene }}/tour.json"
             allowfullscreen
             title="pannellum panorama viewer"></iframe>
-
+      </div>
+  </div>
+  <div class="row">
+      <div class="large-12 columns">
+          <header>
+            <h2 class="entry-title">
+              <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                 title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+                <p class="post-info">
+                    <span title="{{ article.date.isoformat() }}">
+                    {{ article.locale_date }}</span> /
+                  {% if article.category %}
+                  <a href="{{ SITEURL }}/{{ article.category.url }}">{{
+                  article.category }}</a>
+                  {% endif %}
+                </p>
+          </header>
+      </div>
+  </div>
+  <div class="row">
+      <div class="large-4 columns">
           <p>{{ article.content }}</p>
-          <p>tour {{ article.scenes }}</p>
       </div>
-      <div class="large-4 columns" id="map">
+      <div class="large-4 columns">
+        <table>
+            <tr>
+                <th>Größe</th>
+                <td>{{ article.exif.width }}x{{ article.exif.height }}</td>
+            </tr>
+            <tr>
+                <th>Belichtung</th>
+                <td>{{ article.exif.exposure }}</td>
+            </tr>
+        </table>
+          <p>exif {{ article.exif }}</p>
       </div>
-
+      <div class="large-4 columns">
+          <div id="map">
+          </div>
+      </div>
+  </div>
   </div><!-- /.entry-content -->
   <footer class="post-info">
   {% if article.tags %}<ol class="inline-list">{% for tag in article.tags %}

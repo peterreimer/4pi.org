@@ -1,52 +1,54 @@
 {% extends "base.html" %}
 
 {% block banner %}
-<div class="row">
-    <div class="large-12 columns">
-        <img src="{{ SITEURL }}/{{ SIZES_FOLDER }}/{{ latest.scene }}/{{ latest.scene }}-banner.jpg" />
-        latest: <b>{{ latest.url }}</b>
-    </div
-</div
+<div class="panel banner"
+     style="background-image: url({{ SITEURL }}/{{ SIZES_FOLDER }}/{{ latest.scene }}/{{ latest.scene }}-banner.jpg);">
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>
+                <a href="{{ SITEURL }}/{{ latest.url }}">{{ latest.title }}</a>
+            </h2>
+        </div>
+    </div>
+</div>
 {% endblock banner %}
 {% block content %}
 
 <section id="content">
-<ol id="post-list">
 {% for article in articles_page.object_list %}
-    <li>
-        <article class="hentry">
-            <div class=row>
-                <div class="large-12 columns">
-                    <header>
-                        <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-                        <p class="post-info">
-                            <span title="{{ article.date.isoformat() }}">
-                            {{ article.locale_date }}</span> /
-                            <span></span>
-                          {% if article.category %}
-                          <a href="{{ SITEURL }}/{{ article.category.url }}">{{
-                          article.category }}</a>
-                          {% endif %}
-                        </p>
-                    </header>
-                </div>
+    <article class="hentry">
+        <div class=row>
+            <div class="large-12 columns">
+                <header>
+                    <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
+                    <p class="post-info">
+                        <span title="{{ article.date.isoformat() }}">
+                        {{ article.locale_date }}</span> /
+                        <span></span>
+                      {% if article.category %}
+                      <a href="{{ SITEURL }}/{{ article.category.url }}">{{
+                      article.category }}</a>
+                      {% endif %}
+                    </p>
+                </header>
             </div>
-            <div class=row>
-                {% if article.scene %}
-                <div class="large-12 columns">
-                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{{ article.title|striptags }}">
-                        <img src="{{ SITEURL }}/{{ SIZES_FOLDER }}/{{ article.scene }}/{{ article.scene }}-preview.jpg" />
-                    </a>
-                    {{ article.summary }}
-                </div>
-                {% else%}
-                <div class="large-12 columns"> {{ article.summary }} </div><!-- /.entry-content -->
-                {% endif%}
+        </div>
+        <div class=row>
+            {% if article.scene %}
+            <div class="large-12 columns">
+                <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{{ article.title|striptags }}">
+                    <img src="{{ SITEURL }}/{{ SIZES_FOLDER }}/{{ article.scene }}/{{ article.scene }}-preview.jpg" />
+                </a>
+                <em>{{ article.hide_in_index }}</em>
+                {{ article.summary }}
             </div>
-        </article>
-    </li>
+            {% else%}
+            <div class="large-12 columns"> {{ article.summary }} </div><!-- /.entry-content -->
+            {% endif%}
+        </div>
+    </article>
 {% endfor %}
-</ol><!-- /#posts-list -->
+
 {% include 'pagination.html' %}
 </section><!-- /#content -->
 {% endblock content %}
