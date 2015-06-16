@@ -71,7 +71,9 @@ SITEMAP = {'format': 'xml'}
 PANNELLUM = {'debug' : True,
              'sizes_folder' : 'sizes',
              'tile_folder' : os.path.join(HOME, 'public_html', 'tiles'),
-             'tile_url' : 'http://localhost/~peter/tiles'}
+             #'tile_url' : 'http://localhost/~peter/tiles'
+             'tile_url' : 'http://ultra02/~reimer/tiles'
+             }
 
 JSON_FOLDER = 'json'
 SIZES_FOLDER = 'sizes'

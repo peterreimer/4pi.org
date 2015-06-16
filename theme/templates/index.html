@@ -8,15 +8,17 @@
             <h2>
                 <a href="{{ SITEURL }}/{{ latest.url }}">{{ latest.title }}</a>
             </h2>
+            <span>{{ latest.locale_date }}</span>
         </div>
     </div>
 </div>
 {% endblock banner %}
 {% block content %}
 
+filename: {{ output_file }}
 <section id="content">
 {% for article in articles_page.object_list %}
-    {% if not article.hide_in_index %}
+    {% if not article.hide_in_index  %}
     <article class="hentry">
         <div class=row>
             <div class="large-12 columns">

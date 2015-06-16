@@ -20,18 +20,20 @@ $.getJSON(map_data, function(data) {
     var allMarkers = [];
     
     $.each(data, function( label, details ) {
-        var position = L.latLng(details.lat, details.lng);
-        var title = details.title;
-        var icon_url = [site_url,'sizes', label, label + '-icon.jpg'].join("/");
-        var url = [site_url,details.url].join("/");
-        var label = ([
-            "<strong>" + title+ "</strong><br />",
-            "<a href=" + url + "><img src=" + icon_url + " /></a><br />",
-            "<a href=" + url + ">open</a>"
-            ]).join("\n");
-        panopin = L.marker(position).bindPopup(label).openPopup();
-        panopins.push(panopin);
-        allMarkers.push(position);
+        if ( details.lat != null  || details.lng != null ){
+            var position = L.latLng(details.lat, details.lng);
+            var title = details.title;
+            var icon_url = [site_url,'sizes', label, label + '-icon.jpg'].join("/");
+            var url = [site_url,details.url].join("/");
+            var label = ([
+                "<strong>" + title+ "</strong><br />",
+                "<a href=" + url + "><img src=" + icon_url + " /></a><br />",
+                "<a href=" + url + ">open</a>"
+                ]).join("\n");
+            panopin = L.marker(position).bindPopup(label).openPopup();
+            panopins.push(panopin);
+            allMarkers.push(position);
+        };
     });   
 
     var bounds = L.latLngBounds(allMarkers);
