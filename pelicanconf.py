@@ -7,8 +7,8 @@ HOME = os.path.expanduser("~")
 AUTHOR = u'Peter Reimer'
 SITENAME = u'4pi.org'
 #SITESUBTITLE = u'Spherical panoramas'
-SITEURL = ''
-# SITEURL = 'http://localhost/~peter/4pi'
+# SITEURL = ''
+SITEURL = 'http://localhost/~peter/4pi'
 # SITEURL = 'http://ultra02/~reimer/4pi'
 CSS_FILE = 'app.css'
 TIMEZONE = 'Europe/Berlin'
@@ -65,14 +65,14 @@ THEME = 'theme'
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ['neighbors', 'pelican-pannellum', 'sitemap']
+PLUGINS = ['neighbors', 'pannellum', 'sitemap']
 SITEMAP = {'format': 'xml'}
 
 PANNELLUM = {'debug' : True,
              'sizes_folder' : 'sizes',
              'tile_folder' : os.path.join(HOME, 'public_html', 'tiles'),
-             #'tile_url' : 'http://localhost/~peter/tiles'
-             'tile_url' : 'http://ultra02/~reimer/tiles'
+             'tile_url' : 'http://localhost/~peter/tiles'
+             #'tile_url' : 'http://ultra02/~reimer/tiles'
              }
 
 JSON_FOLDER = 'json'

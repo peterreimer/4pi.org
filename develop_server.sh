@@ -8,8 +8,11 @@ PELICANOPTS=
 
 BASEDIR=$(pwd)
 INPUTDIR=$BASEDIR/content
-OUTPUTDIR=$BASEDIR/output
+# OUTPUTDIR=$BASEDIR/output
+OUTPUTDIR=$HOME/public_html/4pi
 CONFFILE=$BASEDIR/pelicanconf.py
+
+echo $OUTPUTDIR
 
 ###
 # Don't change stuff below here unless you are sure

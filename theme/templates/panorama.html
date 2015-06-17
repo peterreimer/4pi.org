@@ -44,6 +44,14 @@
           <h3>Details</h3>
         <table>
             <tr>
+                <th>Camera</th>
+                <td>{{ article.exif.make }} {{ article.exif.model }}</td>
+            </tr>
+            <tr>
+                <th>Lens</th>
+                <td>{{ article.exif.lens }}</td>
+            </tr>
+            <tr>
                 <th>Größe</th>
                 <td>{{ article.exif.width }}x{{ article.exif.height }}</td>
             </tr>
