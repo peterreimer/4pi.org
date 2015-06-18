@@ -1,16 +1,33 @@
 {% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <meta property="og:site_name" content="{{ SITENAME }}" />
+    <meta property="og:type" content="place" />
+    <meta property="og:title" content="{{ article.title }}" />
+    <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
+    <meta property="og:image" content="{{ SITEURL }}/{{ PANNELLUM.sizes_folder }}/{{article.scene}}/{{article.scene}}-preview.jpg" />
+    <meta property="place:location:latitude"  content="{{ article.exif.lat}}" /> 
+    <meta property="place:location:longitude" content="{{ article.exif.lng}}" /> 
+    {% for keyword in article.keywords %}
+    <meta name="keywords" contents="{{keyword}}" />
+    {% endfor %}
+    {% for description in article.description %}
+    <meta name="description" contents="{{description}}" />
+    {% endfor %}
+    {% for tag in article.tags %}
+    <meta name="tags" contents="{{tag}}" />
+    {% endfor %}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/leaflet.css" />
+{% endblock %}
+
 {% block title %}
     {{ article.title}} &mdash; {{ SITENAME }}
 {% endblock title %}
 
-{% block pannellum %}
-<link rel="stylesheet" href="{{ SITEURL }}/theme/css/leaflet.css" />
-{% endblock pannellum %}
-
 {% block content %}
+<section id="content" class="body">
 
-
-<section id="content" class="body panorama">
+{% if article.scene %}
   <div class="row entry-content">
       <div class="large-12 columns">
           <iframe id="pannellum" src="{{ PANNELLUM.tile_url }}/pannellum.html?tour={{ article.scene }}/tour.json"
@@ -18,15 +35,21 @@
             title="pannellum panorama viewer"></iframe>
       </div>
   </div>
+{% endif %}
+
   <div class="row">
       <div class="large-12 columns">
           <header>
             <h2 class="entry-title">
               <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
                  title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
+                {% import 'translations.html' as translations with context %}
+                {{ translations.translations_for(article) }}
                 <p class="post-info">
-                    <span title="{{ article.date.isoformat() }}">
-                    {{ article.locale_date }}</span> /
+                    <span title="{{ article.date.isoformat() }}"> {{ article.locale_date }}</span> /
+                    {% if article.modified %}
+                        <span class="modified" title="{{ article.modified.isoformat() }}"> {{ article.locale_modified }} </span>
+                    {% endif %}
                   {% if article.category %}
                   <a href="{{ SITEURL }}/{{ article.category.url }}">{{
                   article.category }}</a>
@@ -35,6 +58,8 @@
           </header>
       </div>
   </div>
+
+{% if article.scene %}
   <div class="row">
       <div class="large-4 columns">
           <h3>Description</h3>
@@ -42,38 +67,45 @@
       </div>
       <div class="large-4 columns">
           <h3>Details</h3>
-        <table>
-            <tr>
-                <th>Camera</th>
-                <td>{{ article.exif.make }} {{ article.exif.model }}</td>
-            </tr>
-            <tr>
-                <th>Lens</th>
-                <td>{{ article.exif.lens }}</td>
-            </tr>
-            <tr>
-                <th>Größe</th>
-                <td>{{ article.exif.width }}x{{ article.exif.height }}</td>
-            </tr>
-            <tr>
-                <th>Belichtung</th>
-                <td>{{ article.exif.exposure }}</td>
-            </tr>
-        </table>
+            <table>
+                <tr>
+                    <th>Camera</th>
+                    <td>{{ article.exif.make }} {{ article.exif.model }}</td>
+                </tr>
+                <tr>
+                    <th>Lens</th>
+                    <td>{{ article.exif.lens }}</td>
+                </tr>
+                <tr>
+                    <th>Size</th>
+                    <td>{{ article.exif.width }}x{{ article.exif.height }}</td>
+                </tr>
+                <tr>
+                    <th>Exposure</th>
+                    <td>{{ article.exif.exposure }}</td>
+                </tr>
+                <tr>
+                    <th>Comment</th>
+                    <td>{{ article.exif.comment }}</td>
+                </tr>
+            </table>
           <p>exif {{ article.exif }}</p>
       </div>
+  
       <div class="large-4 columns">
           <h3>Location</h3>
           <div id="map">
           </div>
       </div>
+  
   </div>
-  </div><!-- /.entry-content -->
-  <footer class="post-info">
-  {% if article.tags %}<ol class="inline-list">{% for tag in article.tags %}
-  <li><a class="tiny button" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
-  </li>{% endif %}
-  </footer><!-- /.post-info -->
+
+{% else %}
+<div class="large 12 entry-content">
+{{ article.content }}
+</div>
+{% endif %}
+
 </section>
 {% include 'previous-next.html' %}
 {% endblock %}
@@ -82,4 +114,3 @@
 <script src="{{ SITEURL }}/theme/js/leaflet.js"></script>
 <script type="text/javascript" src="{{ SITEURL }}/theme/js/panomap.js"></script>
 {% endblock javascript %}
-
