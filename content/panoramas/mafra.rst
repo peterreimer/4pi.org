@@ -1,10 +1,10 @@
 Palácio Nacional de Mafra
 =========================
 
-:date: 2015-6-12
+:date: 2006-01-01
+:modified: 2015-6-12
 :category: Panoramas
 :tags: Portugal, Mafra
-:template: panorama
 :scene: mafra
 
 Der `Palácio Nacional de Mafra`_, zu deutsch Nationalpalast von Mafra,
