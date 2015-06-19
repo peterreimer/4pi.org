@@ -7,9 +7,9 @@ HOME = os.path.expanduser("~")
 AUTHOR = u'Peter Reimer'
 SITENAME = u'4pi.org'
 #SITESUBTITLE = u'Spherical panoramas'
-SITEURL = ''
+# SITEURL = ''
 # SITEURL = 'http://localhost/~peter/4pi'
-# SITEURL = 'http://ultra02/~reimer/4pi'
+SITEURL = 'http://ultra02/~reimer/4pi'
 CSS_FILE = 'app.css'
 TIMEZONE = 'Europe/Berlin'
 
