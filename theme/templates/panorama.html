@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 {% block head %}
     {{ super() }}
-    <meta property="og:site_name" content="{{ SITENAME }}" />
+    {% block opengraph %}
+    {{ super() }}
     <meta property="og:type" content="place" />
     <meta property="og:title" content="{{ article.title }}" />
     <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}" />
     <meta property="og:image" content="{{ SITEURL }}/{{ PANNELLUM.sizes_folder }}/{{article.scene}}/{{article.scene}}-preview.jpg" />
     <meta property="place:location:latitude"  content="{{ article.exif.lat}}" /> 
     <meta property="place:location:longitude" content="{{ article.exif.lng}}" /> 
+    {% endblock opengraph %}
     {% for keyword in article.keywords %}
     <meta name="keywords" contents="{{keyword}}" />
     {% endfor %}
