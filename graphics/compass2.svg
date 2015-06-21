@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="900"
+   height="900"
+   id="svg2">
+  <title
+     id="title3019">Compass</title>
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Compass</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Peter Reimer</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-150,-149.99999)"
+     id="layer3"
+     style="display:inline">
+    <path
+       d="m 998,538 a 324,324 0 1 1 -648,0 324,324 0 1 1 648,0 z"
+       transform="matrix(1.3888889,0,0,1.3888889,-336.11111,-147.22223)"
+       id="path3802"
+       style="fill:#c8beb7;fill-opacity:1;stroke:none;display:inline" />
+  </g>
+  <g
+     transform="translate(-150,-2.3621746)"
+     id="layer1"
+     style="display:inline">
+    <g
+       id="g3876">
+      <path
+         d="m 600,200 c -18.005,0 -32.5,14.495 -32.5,32.5 l 0,251.96875 C 517.02011,498.64168 480,544.99159 480,600 l 55,0 c 0,-35.89851 29.10149,-65 65,-65 35.89851,0 65,29.10149 65,65 l 55,0 C 720,544.99159 682.97989,498.64168 632.5,484.46875 L 632.5,232.5 C 632.5,214.495 618.005,200 600,200 z"
+         transform="translate(0,-147.63782)"
+         id="path3767"
+         style="fill:#aa0000;fill-opacity:1;stroke:none" />
+      <path
+         d="m 600,852.36218 c 18.005,0 32.5,-14.495 32.5,-32.5 l 0,-251.96875 C 682.97989,553.7205 720,507.37059 720,452.36218 l -55,0 c 0,35.89851 -29.10149,65 -65,65 -35.89851,0 -65,-29.10149 -65,-65 l -55,0 c 0,55.00841 37.02011,101.35832 87.5,115.53125 l 0,251.96875 c 0,18.005 14.495,32.5 32.5,32.5 z"
+         id="path3809"
+         style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    </g>
+    <path
+       d="m 629.5,600 a 29.5,29.5 0 1 1 -59,0 l 29.5,0 z"
+       transform="matrix(-1.5580319,1.5580319,-1.5580319,-1.5580319,2469.6382,452.36217)"
+       id="path3918"
+       style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
+    <path
+       d="m 629.5,600 a 29.5,29.5 0 1 1 -59,0 l 29.5,0 z"
+       transform="matrix(1.5580319,-1.5580319,1.5580319,1.5580319,-1269.6383,452.36216)"
+       id="path3922"
+       style="fill:#333333;fill-opacity:1;stroke:none" />
+  </g>
+  <g
+     transform="translate(-150,-149.99999)"
+     id="layer2"
+     style="display:inline">
+    <path
+       d="M 320.69282,173.055 496.8159,349.17808"
+       transform="translate(0,147.63782)"
+       id="path3815"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="M 879.30718,731.66936 703.1841,555.54628"
+       transform="translate(0,147.63782)"
+       id="path3817"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="M 879.30718,173.055 703.1841,349.17808"
+       transform="translate(0,147.63782)"
+       id="path3819"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="M 320.69282,731.66936 496.8159,555.54628"
+       transform="translate(0,147.63782)"
+       id="path3821"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="m 968.12539,299.87965 -71.05752,29.43299"
+       transform="translate(0,147.63782)"
+       id="path3823"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="m 231.87461,604.84471 71.05752,-29.43299"
+       transform="translate(0,147.63782)"
+       id="path3825"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="M 752.48253,84.236791 723.04954,155.29431"
+       transform="translate(0,147.63782)"
+       id="path3860"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="m 447.51747,820.48757 29.43299,-71.05752"
+       transform="translate(0,147.63782)"
+       id="path3862"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="m 447.51747,84.236787 29.43299,71.057523"
+       transform="translate(0,147.63782)"
+       id="path3864"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="M 752.48253,820.48757 723.04954,749.43005"
+       transform="translate(0,147.63782)"
+       id="path3866"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="m 447.51747,84.236787 29.43299,71.057523"
+       transform="translate(0,147.63782)"
+       id="path3868"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="M 752.48253,820.48757 723.04954,749.43005"
+       transform="translate(0,147.63782)"
+       id="path3870"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="m 231.87461,299.87965 71.05752,29.43299"
+       transform="translate(0,147.63782)"
+       id="path3872"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       d="M 968.12539,604.84471 897.06787,575.41172"
+       transform="translate(0,147.63782)"
+       id="path3874"
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <text
+       x="197.13013"
+       y="656.19336"
+       id="text3896"
+       xml:space="preserve"
+       style="font-size:95.9033432px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="197.13013"
+         y="656.19336"
+         id="tspan3900"
+         style="font-size:153.44534302px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Nevis;-inkscape-font-specification:Nevis Bold">W</tspan></text>
+    <text
+       x="883.83722"
+       y="656.19336"
+       id="text3902"
+       xml:space="preserve"
+       style="font-size:95.9033432px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="883.83722"
+         y="656.19336"
+         id="tspan3904"
+         style="font-size:153.44534302px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Nevis;-inkscape-font-specification:Nevis Bold">O</tspan></text>
+    <text
+       x="540.5849"
+       y="312.51895"
+       id="text3908"
+       xml:space="preserve"
+       style="font-size:95.9033432px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="540.5849"
+         y="312.51895"
+         id="tspan3910"
+         style="font-size:153.44534302px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Nevis;-inkscape-font-specification:Nevis Bold">N</tspan></text>
+    <text
+       x="555.04529"
+       y="999.88727"
+       id="text3912"
+       xml:space="preserve"
+       style="font-size:95.9033432px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="555.04529"
+         y="999.88727"
+         id="tspan3914"
+         style="font-size:153.44534302px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Nevis;-inkscape-font-specification:Nevis Bold">S</tspan></text>
+  </g>
+</svg>
