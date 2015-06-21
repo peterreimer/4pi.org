@@ -16,26 +16,26 @@
 {% block content %}
 
 filename: {{ output_file }}
-<section id="content">
+<div class='posts'>
 {% for article in articles_page.object_list %}
     {% if not article.hide_in_index  %}
-    <article class="hentry">
-        <div class=row>
-            <div class="large-12 columns">
-                <header>
-                    <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
-                    <p class="post-info">
-                        <span title="{{ article.date.isoformat() }}">
-                        {{ article.locale_date }}</span> /
-                        <span></span>
-                      {% if article.category %}
-                      <a href="{{ SITEURL }}/{{ article.category.url }}">{{
-                      article.category }}</a>
-                      {% endif %}
-                    </p>
+    <section>
+        <header class="post-header">
+            <h3 class="post-title">
+                <a href="{{ SITEURL }}/{{ article.url }}"
+                   rel="bookmark"
+                   title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+            </h3>
+            <p class="post-meta">
+                <span title="{{ article.date.isoformat() }}">
+                {{ article.locale_date }}</span> /
+                <span></span>
+              {% if article.category %}
+              <a href="{{ SITEURL }}/{{ article.category.url }}">{{
+              article.category }}</a>
+              {% endif %}
+            </p>
                 </header>
-            </div>
-        </div>
         <div class=row>
             {% if article.scene %}
             <div class="large-12 columns">
@@ -49,10 +49,16 @@ filename: {{ output_file }}
             <div class="large-12 columns"> {{ article.summary }} </div><!-- /.entry-content -->
             {% endif%}
         </div>
-    </article>
+    </section>
     {% endif %}
 {% endfor %}
 
-{% include 'pagination.html' %}
-</section><!-- /#content -->
+
+</div><!-- /#content -->
 {% endblock content %}
+
+{% block footer %}
+{% include 'pagination.html' %}
+{% endblock %}
+
+

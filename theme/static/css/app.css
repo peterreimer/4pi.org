@@ -1,8 +1,10 @@
-body {
-    font-family:
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    /*background: url("/theme/images/handmadepaper.png") repeat scroll 0 0 transparent;*/
 }
+html, body, #container { height: 100%; }
+body > #container { height: auto; min-height: 100%; }
+
 .banner {
     height: 256px;
     background-repeat: repeat-x;
@@ -17,82 +19,14 @@ body {
     color: #ffffff;
     text-shadow: 0 0 1px #000, 0 0 2px rgba(0, 0, 0, 0.9);
 }
-.doormat {
-    margin-bottom: 0;
-    background-color: #51454A;
-    color: #ffffff;
-}
-h1, h2, h3, h4, h5 {
-    font-family: "Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
-    font-weight: 500;
-    font-family:  "Open Sans Condensed",sans-serif;
-    font-weight: bold;
-}
-h2.entry-title {
-    margin-bottom: 0.1em;
-    text-shadow: 1px 1px 0 #FFFFFF;
-}
-
-header {
-    margin-bottom: 0.5em;
-}
-.top-bar .name img {
-    height: 40px;
-    padding-bottom: 5px;
-}
-.top-bar {
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-}
-.top-bar,
-.top-bar-section ul li,
-.top-bar-section ul li.has-form,
-.top-bar-section li:not(.has-form) a:not(.button)
-{
-    background-color: #ffffff;
-}
-.top-bar-section ul li > a {
-    color: #51454A;
-}
-/*
-.large-12 {
-    padding-left: 0;
-    padding-right: 0;
-}*/
-#post-list {
-    list-style: none;
-}
-#post-list li {
-    padding-bottom: 1em;
-    border-bottom: 1px solid #ccc;
-}
-.post-info {
-    margin-bottom: 0.25em;
-    text-transform: uppercase;
-    font-size: 0.8em;
-}
-.social a {
-	background-repeat: no-repeat;
-	background-position: 3px 2px;
-	padding-left: 25px;
-}
-
-/* Icons */
-.social a[href*='about.me'] {background-image: url('../images/icons/aboutme.png');}
-.social a[href*='bitbucket.org'] {background-image: url('../images/icons/bitbucket.png');}
-.social a[href*='delicious.com'] {background-image: url('../images/icons/delicious.png');}
-.social a[href*='digg.com'] {background-image: url('../images/icons/digg.png');}
-.social a[href*='facebook.com'] {background-image: url('../images/icons/facebook.png');}
-.social a[href*='gitorious.org'] {background-image: url('../images/icons/gitorious.png');}
-.social a[href*='github.com'],
-.social a[href*='git.io'] {background-image: url('../images/github.png');}
-
-/* Salado Player */
-
 #worldmap {
      height: 600px;
 }
 #map {
      height: 400px;
+}
+.viewer {
+    margin: 0 -3em;
 }
 #pannellum {
     border-style:none;
@@ -103,6 +37,18 @@ header {
     border-radius: 2px;
 }
 
+#footer {
+ margin-left: 25%;
+ clear: both;
+ position: fixed;
+ z-index: 10;
+ height: 3em;
+ width: 100%;
+ margin-top: -3em;
+ bottom: 0;
+}
+
+/*
 .post-navigation div span {
     color: #999;
     display: block;
@@ -134,3 +80,4 @@ header {
     content: "«";
     left: 0;
 }
+*/

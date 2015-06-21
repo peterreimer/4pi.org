@@ -1,6 +1,6 @@
-<div class="row post-navigation">
+<div class="pure-g post-navigation">
 {% if article.prev_article %}
-    <div class="post-previous small-6 large-6 columns">
+    <div class="post-previous pure-u-1-2">
         <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
            <span>Zurück</span>
            {{ article.prev_article.title }}
@@ -8,7 +8,7 @@
     </div>
 {% endif %}
 {% if article.next_article %}
-    <div class="post-next small-6 large-6 columns">
+    <div class="post-next small-6 pure-u-1-2">
         <a href="{{ SITEURL }}/{{ article.next_article.url}}"
            title="{{ article.next_article.title }}">
             <span>Vor</span>
