@@ -1,18 +1,15 @@
 {% extends "base.html" %}
 
 {% block banner %}
-<div class="panel banner"
+<div class="banner panel"
      style="background-image: url({{ SITEURL }}/{{ SIZES_FOLDER }}/{{ latest.scene }}/{{ latest.scene }}-banner.jpg);">
-    <div class="row">
-        <div class="large-12 columns">
-            <h2>
-                <a href="{{ SITEURL }}/{{ latest.url }}">{{ latest.title }}</a>
-            </h2>
-            <span>{{ latest.locale_date }}</span>
-        </div>
-    </div>
+    <h2>
+        <a href="{{ SITEURL }}/{{ latest.url }}">{{ latest.title }}</a>
+    </h2>
+    <span>{{ latest.locale_date }}</span>
 </div>
 {% endblock banner %}
+
 {% block content %}
 
 filename: {{ output_file }}

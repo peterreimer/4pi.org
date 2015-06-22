@@ -1,4 +1,4 @@
-Kontakt
+Contact
 =======
 
 :date: 2013-05-13

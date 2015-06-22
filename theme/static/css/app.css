@@ -2,9 +2,31 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-html, body, #container { height: 100%; }
-body > #container { height: auto; min-height: 100%; }
+html, body, #container {
+    height: 100%;
+}
 
+body > #container {
+    height: auto;
+    min-height: 100%;
+}
+#container {
+    margin-bottom: 3em;
+}
+#footer {
+    background-color: #fff;
+    clear: both;
+    position: fixed;
+    z-index: 10;
+    height: 3em;
+    width: 100%;
+    margin-top: -3em;
+    bottom: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+#footer .social {
+    background: #0E2625;
+}
 .banner {
     height: 256px;
     background-repeat: repeat-x;
@@ -13,19 +35,53 @@ body > #container { height: auto; min-height: 100%; }
     text-shadow: 0 0 1px #000, 0 0 2px rgba(0, 0, 0, 0.9);
 }
 .banner h2 {
-    margin: 165px 0 3px 0;
+    margin: 0 0 3px 0;
+    padding-top: 165px;
 }
 .banner h2 a {
-    color: #ffffff;
+    color: #fff;
     text-shadow: 0 0 1px #000, 0 0 2px rgba(0, 0, 0, 0.9);
 }
+.panel {
+    margin: 0 -3em;
+    padding: 0 3em;
+}
+
+.social ul {
+    margin-top: 0;
+    list-style: none;
+}
+.social ul li {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    margin: 0 0 0 15px;
+}
+
+.social a {
+    background-image: url('../images/social-sprite.svg');
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.social a[href*='github.com']    {background-position: 0px 0px;}
+.social a[href*='twitter.com']   {background-position: -32px 0px;}
+.social a[href*='flickr.com']    {background-position: -64px 0px;}
+.social a[href*='360cities.com'] {background-position: -96px 0px;}
+.social a.feed                   {background-position: -128px 0px;}
+
 #worldmap {
      height: 600px;
 }
 #map {
      height: 400px;
 }
-.viewer {
+.panel {
     margin: 0 -3em;
 }
 #pannellum {
@@ -37,16 +93,6 @@ body > #container { height: auto; min-height: 100%; }
     border-radius: 2px;
 }
 
-#footer {
- margin-left: 25%;
- clear: both;
- position: fixed;
- z-index: 10;
- height: 3em;
- width: 100%;
- margin-top: -3em;
- bottom: 0;
-}
 
 /*
 .post-navigation div span {

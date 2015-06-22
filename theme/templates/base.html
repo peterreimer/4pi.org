@@ -52,6 +52,7 @@
     <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
     {% endif %}
     {% endblock head %}
+    <link rel="dns-prefetch" href="//tiles.4pi.org/" />
 </head>
 
 <body>
@@ -109,9 +110,25 @@
 
 </div>
 
-<div id="footer">        
-    {% block footer %}
-    {% endblock %}
+<div id="footer" class="pure-g">
+
+    <div class="social pure-u-1 pure-u-md-1-4">
+    {% if SOCIAL or FEED_ALL_ATOM or FEED_ALL_RSS %}
+        <ul>
+        {% for name, link in SOCIAL %}
+            <li><a href="{{ link }}">{{ name }}</a></li>
+        {% endfor %}
+            <li><a class="feed" href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}">RSS</a></li>
+        </ul>
+    {% endif %}
+
+
+
+    </div>        
+    <div class="footer pure-u-1 pure-u-md-3-4">        
+        {% block footer %}
+        {% endblock %}
+    </div>        
 </div>        
 
     {% block footer_javascript %}

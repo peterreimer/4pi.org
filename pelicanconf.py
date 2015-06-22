@@ -44,9 +44,10 @@ EXTRA_PATH_METADATA = {
     'extras/favicon.ico': {'path':'favicon.ico'},
     }   
 # Social widget
-SOCIAL = (('GitHub', 'https://github.com/peterreimer'),
-          ('Delicious','https://delicious.com/preimer'),
-          ('360Cities', 'http://www.360cities.net/profile/reimer'),)
+SOCIAL = (('GitHub',    'https://github.com/peterreimer'),
+          ('Flickr',    'https://www.flickr.com/photos/4pi'),
+          ('Twitter',   'https://twitter.com/4pi'),
+          ('360Cities', 'https://www.360cities.net/profile/reimer'),)
 
 #PAGINATION_PATTERNS = (
 #    (1, '{base_name}/', '{base_name}/index.html'),
