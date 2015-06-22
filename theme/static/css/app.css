@@ -42,14 +42,11 @@ body > #container {
     color: #fff;
     text-shadow: 0 0 1px #000, 0 0 2px rgba(0, 0, 0, 0.9);
 }
-.panel {
-    margin: 0 -3em;
-    padding: 0 3em;
-}
 
 .social ul {
     margin-top: 0;
     list-style: none;
+    padding-left:0;
 }
 .social ul li {
     display: inline-block;
@@ -69,11 +66,20 @@ body > #container {
     top: 0;
 }
 
-.social a[href*='github.com']    {background-position: 0px 0px;}
-.social a[href*='twitter.com']   {background-position: -32px 0px;}
-.social a[href*='flickr.com']    {background-position: -64px 0px;}
-.social a[href*='360cities.com'] {background-position: -96px 0px;}
-.social a.feed                   {background-position: -128px 0px;}
+.social a[href*='github']    {background-position: 0px 0px;}
+.social a[href*='twitter']   {background-position: -32px 0px;}
+.social a[href*='flickr']    {background-position: -64px 0px;}
+
+.social a[href*='360cities'] {
+    background-position: -96px 0px;
+}
+.social a.feed {
+    background-position: -128px 0px;
+}
+.footer {
+    background-color: #fff;
+    opacity: 0.8;
+}
 
 #worldmap {
      height: 600px;
@@ -81,9 +87,7 @@ body > #container {
 #map {
      height: 400px;
 }
-.panel {
-    margin: 0 -3em;
-}
+
 #pannellum {
     border-style:none;
     width:100%;
@@ -127,3 +131,9 @@ body > #container {
     left: 0;
 }
 */
+
+@media (min-width: 48em) {
+    .panel {
+        margin: 0 -3em;
+    }
+}
