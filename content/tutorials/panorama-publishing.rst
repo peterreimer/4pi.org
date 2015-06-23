@@ -9,6 +9,5 @@ Several steps:
 
 * copy exif from source image to panorama
 * Samyang or zenitar: add metadata to source
-* 
 * add photosphere metadata
 
