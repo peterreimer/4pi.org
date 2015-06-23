@@ -1,7 +1,13 @@
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 html, body, #container {
     height: 100%;
 }
@@ -14,7 +20,7 @@ body > #container {
     margin-bottom: 3em;
 }
 #footer {
-    background-color: #fff;
+    background-color: transparent;
     clear: both;
     position: fixed;
     z-index: 10;
@@ -32,12 +38,17 @@ body > #container {
     background-repeat: repeat-x;
     background-position: center 0 ;
     color: #ffffff;
-    text-shadow: 0 0 1px #000, 0 0 2px rgba(0, 0, 0, 0.9);
+    position: relative;
+    /*text-shadow: 0 0 1px #000, 0 0 2px rgba(0, 0, 0, 0.9);*/
 }
-.banner h2 {
-    margin: 0 0 3px 0;
-    padding-top: 165px;
+.banner .latest-panorama {
+    bottom: 0;
+    position: absolute;
+    padding-left: 3em;
+    width: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%) repeat scroll 0 0;
 }
+
 .banner h2 a {
     color: #fff;
     text-shadow: 0 0 1px #000, 0 0 2px rgba(0, 0, 0, 0.9);
@@ -78,11 +89,11 @@ body > #container {
 }
 .footer {
     background-color: #fff;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 #worldmap {
-     height: 600px;
+     height: 400px;
 }
 #map {
      height: 400px;

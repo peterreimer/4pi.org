@@ -3,10 +3,13 @@
 {% block banner %}
 <div class="banner panel"
      style="background-image: url({{ SITEURL }}/{{ SIZES_FOLDER }}/{{ latest.scene }}/{{ latest.scene }}-banner.jpg);">
-    <h2>
-        <a href="{{ SITEURL }}/{{ latest.url }}">{{ latest.title }}</a>
-    </h2>
-    <span>{{ latest.locale_date }}</span>
+    
+    <div class="latest-panorama">
+        <span>Latest panorama, {{ latest.locale_date }}</span>
+        <h2>
+            <a href="{{ SITEURL }}/{{ latest.url }}">{{ latest.title }}</a>
+        </h2>
+    </div>
 </div>
 {% endblock banner %}
 
