@@ -70,6 +70,7 @@ PLUGINS = ['neighbors', 'pannellum', 'sitemap']
 SITEMAP = {'format': 'xml'}
 
 PANNELLUM = {'debug' : True,
+             'autoRotate' : 1,
              'sizes_folder' : 'sizes',
              'tile_folder' : os.path.join(HOME, 'public_html', 'tiles'),
              'tile_url' : 'http://localhost/~peter/tiles'

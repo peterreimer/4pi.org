@@ -1,19 +1,21 @@
 <div class="pure-g post-navigation">
-{% if article.prev_article %}
+
     <div class="post-previous pure-u-1-2">
+    {% if article.prev_article %}
         <a href="{{ SITEURL }}/{{ article.prev_article.url}}">
-           <span>Zurück</span>
+           <span>Previous</span>
            {{ article.prev_article.title }}
         </a>
+    {% endif %}
     </div>
-{% endif %}
-{% if article.next_article %}
+
     <div class="post-next small-6 pure-u-1-2">
+    {% if article.next_article %}
         <a href="{{ SITEURL }}/{{ article.next_article.url}}"
            title="{{ article.next_article.title }}">
-            <span>Vor</span>
+            <span>Next</span>
            {{ article.next_article.title }}
         </a>
+    {% endif %}
     </div>
-{% endif %}
 </div>   

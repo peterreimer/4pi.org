@@ -1,7 +1,7 @@
 Mirador Lomo da las Chozas
 ==========================
 
-:date: 2016-01-05
+:date: 2008-08-06
 :modified: 2015-06-16
 :category: Panoramas
 :tags: La Palma

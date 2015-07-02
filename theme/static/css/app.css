@@ -6,6 +6,14 @@ html, button, input, select, textarea,
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: normal;
+}
+ul.keywords  {
+    list-style: none;
+    padding: 0;
+}
+ul.keywords li {
+    display: inline-block;
 }
 
 html, body, #container {
@@ -23,7 +31,7 @@ body > #container {
     background-color: transparent;
     clear: both;
     position: fixed;
-    z-index: 10;
+    z-index: 1000;
     height: 3em;
     width: 100%;
     margin-top: -3em;
@@ -89,7 +97,8 @@ body > #container {
 }
 .footer {
     background-color: #fff;
-    opacity: 0.9;
+    opacity: 0.95;
+    padding: 0;
 }
 
 #worldmap {
@@ -109,23 +118,26 @@ body > #container {
 }
 
 
-/*
+
 .post-navigation div span {
-    color: #999;
     display: block;
-    font-size: 80%;
 }
 .post-previous {
     float: left;
+    height: 3em;
     padding-left: 40px;
+    position: relative;
+    text-align: left;
+
 }
 .post-next {
     float: right;
+    height: 3em;
     padding-right: 40px;
+    position: relative;
     text-align: right;
 }
 .post-navigation div a:after {
-    color: #ccc;
     font-size: 56px;
     height: 22px;
     line-height: 22px;
@@ -135,13 +147,13 @@ body > #container {
 }
 .post-next a:after {
     content: "»";
-    right: 0;
+    right: 7px;
 }
 .post-previous a:after {
     content: "«";
-    left: 0;
+    left: 7px;
 }
-*/
+
 
 @media (min-width: 48em) {
     .panel {
