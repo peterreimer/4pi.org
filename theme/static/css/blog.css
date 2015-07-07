@@ -32,9 +32,10 @@ a:focus {
 
 .sidebar {
     background: rgb(61, 79, 93);
-    background: #0E2625;
-    color: #fff;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    color: #444;
+    /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
+    border-right: 4px solid #eee;
 }
 
 .brand-title,
@@ -63,8 +64,7 @@ a:focus {
     background: transparent;
     border: 2px solid rgb(176, 202, 219);
     border: none;
-    color: #463B40;
-    color: #FFFFE9;
+    color: #444;
     margin-top: 1em;
     font-weight: bold;
     letter-spacing: 0.05em;
@@ -90,6 +90,7 @@ a:focus {
 
 .content {
     padding: 2em 1em 0;
+    background-color: #fcfcfc;
 }
 
 .post {

@@ -7,9 +7,9 @@ HOME = os.path.expanduser("~")
 AUTHOR = u'Peter Reimer'
 SITENAME = u'4pi.org'
 SITESUBTITLE = u'Spherical panoramas'
-SITEURL = '/'
+# SITEURL = '/'
 # SITEURL = 'http://localhost/~peter/4pi'
-# SITEURL = 'http://ultra02/~reimer/4pi'
+SITEURL = 'http://ultra02/~reimer/4pi'
 CSS_FILE = 'app.css'
 TIMEZONE = 'Europe/Berlin'
 
@@ -55,7 +55,7 @@ SOCIAL = (('GitHub',    'https://github.com/peterreimer'),
 #)
 
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 3
 # TEMPLATE_PAGES = {'map.html': 'karte.html',}
 
 ARTICLE_URL     = '{date:%Y}/{slug}/'
@@ -73,13 +73,11 @@ PANNELLUM = {'debug' : True,
              'autoRotate' : 1,
              'sizes_folder' : 'sizes',
              'tile_folder' : os.path.join(HOME, 'public_html', 'tiles'),
-             'tile_url' : 'http://localhost/~peter/tiles'
-             # 'tile_url' : 'http://ultra02/~reimer/tiles'
+             #'tile_url' : 'http://localhost/~peter/tiles'
+             'tile_url' : 'http://ultra02/~reimer/tiles'
              }
 
 JSON_FOLDER = 'json'
 SIZES_FOLDER = 'sizes'
-# TILE_URL = 'http://ultra02/~reimer/tiles'
-# PANNELLUM_DEBUG = False
 FULLSIZE_PANORAMAS = 'panos'
 
