@@ -34,8 +34,8 @@ a:focus {
     background: rgb(61, 79, 93);
     background: #fff;
     color: #444;
-    /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
-    border-right: 4px solid #eee;
+    z-index: 1001;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .brand-title,
@@ -60,7 +60,17 @@ a:focus {
     *display: inline;
     zoom: 1;
 }
-.nav-item a {
+.nav-item:focus,
+.nav-item:hover {
+    background-color: #ddd;
+}
+
+.nav-item:hover a.pure-button,
+.nav-item:focus a.pure-button,
+.nav-item + .selected a.pure-button {
+    color: #cc6600;
+}
+.nav-item a.pure-button {
     background: transparent;
     border: 2px solid rgb(176, 202, 219);
     border: none;
@@ -90,7 +100,6 @@ a:focus {
 
 .content {
     padding: 2em 1em 0;
-    background-color: #fcfcfc;
 }
 
 .post {
@@ -166,6 +175,10 @@ a:focus {
     .nav-item {
         display: block;
         zoom: 1;
+    }
+    .nav-item a {
+        display: block;
+        text-align: right;
     }
 
     .sidebar {

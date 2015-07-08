@@ -73,7 +73,7 @@
 
                     {% for title, link in MENUITEMS %}
                         <li class="nav-item">
-                            <a href="{{ link }}">{{ title }}</a>
+                            <a class="pure-button" href="{{ link }}">{{ title }}</a>
                         </li>
                     {% endfor %}
                     
@@ -108,10 +108,14 @@
         {% block content %}
         {% endblock %}
         </div>        
+        <div class="footer">        
+            {% block footer %}
+            {% endblock %}
+        </div>        
     </div>
 
 </div>
-
+<!--
 <div id="footer" class="pure-g">
 
     <div class="social pure-u-1 pure-u-md-1-4">
@@ -129,12 +133,8 @@
 
 
     </div>        
-    <div class="footer pure-u-1 pure-u-md-3-4">        
-        {% block footer %}
-        {% endblock %}
-    </div>        
 </div>        
-
+-->
     {% block footer_javascript %}
     {% endblock footer_javascript %}
 </body>

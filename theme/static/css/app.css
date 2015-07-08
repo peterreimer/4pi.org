@@ -3,6 +3,9 @@ html, button, input, select, textarea,
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+body {
+    background-color: #fcfcfc;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -24,11 +27,20 @@ body > #container {
     height: auto;
     min-height: 100%;
 }
+.sidebar .header {
+    margin: 0;
+}
+.brand-title {
+    text-align: center;
+    margin-top: 2em;
+}
 #container {
     margin-bottom: 3em;
 }
-#footer {
+.footer {
     background-color: transparent;
+    /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
+    border-top: 2px solid #eee;
     clear: both;
     position: fixed;
     z-index: 1000;
@@ -36,15 +48,17 @@ body > #container {
     width: 100%;
     margin-top: -3em;
     bottom: 0;
+    background-color: #fff;
+    opacity: 0.95;
+    padding: 0;
+}
+.footer .pure-menu-horizontal {
+    text-align: center;
 }
 #footer .social {
     background: #fff;
 }
 
-#footer .footer {
-    /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
-    border-top: 4px solid #eee;
-}
 .banner {
     height: 256px;
     background-repeat: repeat-x;
@@ -98,11 +112,6 @@ body > #container {
 }
 .social a.feed {
     background-position: -128px 0px;
-}
-.footer {
-    background-color: #fff;
-    opacity: 0.95;
-    padding: 0;
 }
 
 #worldmap {
@@ -159,10 +168,15 @@ body > #container {
 
 .pagination li {
     display: inline-block;
-}; 
+} 
 
 @media (min-width: 48em) {
     .panel {
         margin: 0 -3em;
+    }
+
+    .footer {
+        width: 75%;
+        margin-left: -3em;
     }
 }
