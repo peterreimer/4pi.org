@@ -6,6 +6,7 @@ Mirador Lomo da las Chozas
 :category: Panoramas
 :tags: La Palma
 :scene: laschozas
+:tour: lapalma
 
 View over the Caldera de Taburiente during a walk along the edge of the caldera La Cumbrecita.
 

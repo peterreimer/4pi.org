@@ -3,7 +3,7 @@ Dybbøl Mill
 
 :date: 2015-06-25
 :category: Panoramas
-:tags: Mill
+:tags: Mühle
 :scene: dybbol
 
 Originally build in 1744 the `Dybbøl Mill`_ was destroyed 
