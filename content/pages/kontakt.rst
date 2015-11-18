@@ -1,8 +1,8 @@
-Contact
+Kontakt
 =======
 
 :slug: kontakt
-:lang: en
+:lang: de
 
 | *Peter Reimer*
 | 47803 Krefeld
