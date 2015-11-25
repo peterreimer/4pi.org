@@ -1,5 +1,6 @@
 PY=python
 PELICAN=pelican
+#PELICANOPTS="--verbose"
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
@@ -14,7 +15,7 @@ FTP_HOST=localhost
 FTP_USER=anonymous
 FTP_TARGET_DIR=/
 
-SSH_HOST=www.reimer-web.de
+SSH_HOST=www.4pi.org
 SSH_PORT=22
 SSH_USER=peter
 SSH_TARGET_DIR=/var/www/beta.4pi.org
@@ -74,7 +75,7 @@ ssh_upload: publish
 
 rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(TILESDIR)/ $(SSH_USER)@$(SSH_HOST):$(TILES_TARGET_DIR) --cvs-exclude
+#	rsync -e "ssh -p $(SSH_PORT)" -P -rv --delete $(TILESDIR)/ $(SSH_USER)@$(SSH_HOST):$(TILES_TARGET_DIR) --cvs-exclude
 
 dropbox_upload: publish
 	cp -r $(OUTPUTDIR)/* $(DROPBOX_DIR)

@@ -2,6 +2,7 @@ Kontakt
 =======
 
 :slug: kontakt
+:status: hidden 
 :lang: de
 
 | *Peter Reimer*

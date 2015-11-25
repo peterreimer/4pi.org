@@ -5,10 +5,12 @@ Exif Data for scanned images
 :category: Tutorial
 :tags: exif
 
-Lossless rotation of jpg files::
+Lossless rotation of jpg files:
 
-    for i in *.jpg; do jpegtran -rotate 90 -outfile rotate/$i $i; done
-    
+.. code-block:: bash
+
+   $ for i in *.jpg; do jpegtran -rotate 90 -outfile rotate/$i $i; done
+
 
 Preparing scanned images::
 

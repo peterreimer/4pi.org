@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://beta.4pi.org'
+SITEURL = 'https://beta.4pi.org'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -21,7 +21,7 @@ DELETE_OUTPUT_DIRECTORY = True
 PANNELLUM = {'debug' : False,
              'sizes_folder' : 'sizes',
              'tile_folder' : os.path.join(HOME, 'public_html', 'tiles'),
-             'tile_url' : 'http://tiles.4pi.org'}
+             'tile_url' : 'https://tiles.4pi.org'}
 
 # Following items are often useful when publishing
 

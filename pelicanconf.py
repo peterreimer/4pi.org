@@ -2,11 +2,14 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 import os
-HOME = os.path.expanduser("~")
+import logging
 
+HOME = os.path.expanduser("~")
+LOG_FILTER = [(logging.info, 'Copying')]
 AUTHOR = u'Peter Reimer'
 SITENAME = u'4pi.org'
 SITESUBTITLE = u'Spherical panoramas'
+
 # SITEURL = '/'
 # SITEURL = 'http://localhost/~peter/4pi'
 # SITEURL = 'http://ultra02/~reimer/4pi'
@@ -19,6 +22,7 @@ STATIC_PATHS = [
     'images',
     'preview',
     'sizes',
+    'downloads',
     'extras/robots.txt',
     'extras/humans.txt',
     'extras/favicon.ico',
@@ -55,7 +59,7 @@ SOCIAL = (('GitHub',    'https://github.com/peterreimer'),
 #)
 
 
-DEFAULT_PAGINATION = 3
+DEFAULT_PAGINATION = 10
 # TEMPLATE_PAGES = {'map.html': 'karte.html',}
 
 ARTICLE_URL     = '{date:%Y}/{slug}/'

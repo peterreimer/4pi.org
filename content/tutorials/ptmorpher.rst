@@ -110,6 +110,87 @@ victims of spiderman (see next screenshoot, click on it to get a
 magnified view). The triangles are only created in one window, but they
 can be copied to the second window by 'Edit>Copy Triangles'.
 
+.. figure:: {filename}/images/morph2s.jpg
+   :alt: PTPicker Window with control points and triangles
+   :class: image-process-article-image
+
+   PTPicker Window with control points and triangles
+
+The automatic triangulation creates some unwanted triangles, as for example
+between the ears and the shoulder. Selecting the appropriate control points (red
+in above screenshot) and going to 'Edit>Remove Triangle' removes those. The next
+screenshot shows the final triangulation, after copying the triangles also to
+the second window.
+
+.. figure:: {filename}/images/morph3s.jpg
+   :alt: PTPicker Window after cleaning up triangles
+   :class: image-process-article-image
+
+   PTPicker Window after cleaning up triangles
+
+The box below shows the script as it is saved by ptpicker. Some parameters are
+added, which are not relevant for PTMorpher and are thus ignored (u10 in the 'p'
+line for feathering in panorama creation, X,Y,Z for PTStereo). The 'v'-lines are
+also ignored, since the Optimizer is not needed for morphing.
+
+The 'c' lines denote the control points and each 't' line stands for one
+triangle. There are two blocks of 't' lines, one for each image i0 and i1. 
+
+::
+
+    p f0 w238 h300 v5 u10 a0 b1 c0.05 n"JPEG"
+
+    i f0 w950 h1200 y0 p0 r0 v5 n"schroeder.jpg" X0 Y0 Z0
+    i f0 w950 h1200 y0 p0 r0 v5 n"stoiber.jpg" X1 Y0 Z0
+    v
+    v
+    c n0 N1 x599 y746 X585 Y740
+    c n0 N1 x625 y744 X619 Y731
+    c n0 N1 x640 y743 X645 Y721
+    c n0 N1 x570 y744 X545 Y750
+    [...]
+    t 1 0 20 i0
+    t 1 7 8 i0
+    t 1 18 2 i0
+    t 3 17 0 i0
+    [...]
+    t 1 0 20 i1
+    t 1 7 8 i1
+    t 1 18 2 i1
+    t 3 17 0 i1
+    [...]
+
+Download the `full script file <{filename}/downloads/script.txt>`_, if you want to try it yourself.  
+
+Morphing
+--------
+
+The morphing can be started by 'Project>Morph' or using the command line:
+
+::
+
+    $ PTMorpher script.txt -o result/schroiber
+    
+This command will produce 20 images in the subdirectory "result", named schroiber.000 to schroiber.019. It's advisable to save the output images in a separate directory, since it can be many.
+
+Result
+------
+
+The output images can be merged with PTStripe to a single stripe, suitable for
+PTViewer. An object movie of the animation can be found here. The following
+table shows a few intermediate views of the full sequence. Depending on the
+results of the elections in September, Germany's new chancellor will look like
+one of those portraits ;-)
+
++----------+-----------------------------+
+|          |   |Morphing sequenz|        |
++----------+------+-----+-----+-----+----+
+| Schröder | 100% | 75% | 50% | 25% | 0% |
++----------+------+-----+-----+-----+----+
+| Stoiber  | 100% | 75% | 50% | 25% | 0% |
++----------+------+-----+-----+-----+----+
+
 .. |Portrait Schröder| image:: {filename}/images/schroeder150.jpg
 .. |Portrait Stoiber| image:: {filename}/images/stoiber150.jpg
+.. |Morphing sequenz| image:: {filename}/images/result.jpg
 
