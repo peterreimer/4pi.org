@@ -23,13 +23,12 @@ STATIC_PATHS = [
     'preview',
     'sizes',
     'downloads',
-    'extras/robots.txt',
-    'extras/humans.txt',
-    'extras/favicon.ico',
+    'extras',
     ]
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
+FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
@@ -46,7 +45,9 @@ EXTRA_PATH_METADATA = {
     'extras/robots.txt': {'path':'robots.txt'},
     'extras/humans.txt': {'path':'humans.txt'},
     'extras/favicon.ico': {'path':'favicon.ico'},
-    }   
+    'extras/google493ff9a1a9e2a97f.html': {'path':'google493ff9a1a9e2a97f.html'},
+    }
+READERS = {'html': None}
 # Social widget
 SOCIAL = (('GitHub',    'https://github.com/peterreimer'),
           ('Flickr',    'https://www.flickr.com/photos/4pi'),
@@ -75,6 +76,7 @@ SITEMAP = {'format': 'xml'}
 
 PANNELLUM = {'debug' : True,
              'autoRotate' : 1,
+             'sceneFadeDuration' : 2000,
              'sizes_folder' : 'sizes',
              'tile_folder' : os.path.join(HOME, 'public_html', 'tiles'),
              'tile_url' : 'http://localhost/~peter/tiles'
@@ -83,5 +85,6 @@ PANNELLUM = {'debug' : True,
 
 JSON_FOLDER = 'json'
 SIZES_FOLDER = 'sizes'
-FULLSIZE_PANORAMAS = 'panos'
+FULLSIZE_PANORAMAS = 'fullsize'
+PREVIEW_PANORAMAS = 'preview'
 
