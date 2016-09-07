@@ -31,6 +31,11 @@ Several steps:
 
     $ exiftool -@ ~/.ExifTool/samyang panorama.jpg
 
+* prepend filename with focal length
+  
+  .. code-block:: bash
+      
+    $ exiftool '-filename<${focallength}_%f.%e'
   
   .ExifTool/samyang:
   
@@ -51,6 +56,7 @@ Several steps:
 .. raw:: html
 
     <script src="https://gist.github.com/peterreimer/d33f79555a05ee0c6002.js"></script>
+
 
 Benchmark
 ---------
