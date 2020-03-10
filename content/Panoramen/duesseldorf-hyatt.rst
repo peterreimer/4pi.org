@@ -5,6 +5,6 @@ Hotel Hyatt Düsseldorf
 :category: Panoramas
 :tags:     Düsseldorf, Medienhafen, Hyatt
 :scene:    medienhafen-hyatt
-:tour:     medienhafen
+:tour:     Medienhafen Düsseldorf
 
 Hyatt

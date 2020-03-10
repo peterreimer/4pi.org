@@ -5,6 +5,6 @@ Brücke im Medienhafen Düsseldorf
 :category: Panoramas
 :tags:     Düsseldorf, Medienhafen, Hyatt
 :scene:    medienhafen-bruecke
-:tour:     medienhafen
+:tour:     Medienhafen Düsseldorf
 
 Brücke
