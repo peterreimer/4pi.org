@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg4656"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="icon.svg">
+  <defs
+     id="defs4650" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="191.52188"
+     inkscape:cy="259.74338"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4653">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.85044661,-143.23289)">
+    <g
+       id="g4034"
+       transform="matrix(0.15583259,0,0,0.15583259,25.917414,150.08564)"
+       style="fill:#ff6600">
+      <path
+         transform="matrix(0.04102564,0,0,0.04102564,0.12307692,-0.04102564)"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="M 2600,3005 V 9 L 5,1507 v 2996 z"
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Cantarell;fill:#ff6600;fill-opacity:0.6745098;stroke:#ffffff;stroke-width:195;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+         id="polyline46" />
+      <path
+         transform="matrix(0.04102564,0,0,0.04102564,0.12307692,-0.04102564)"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="M 5195,7499 7789,8997 5195,10495 2600,8997 Z"
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Cantarell;fill:#ff6600;fill-opacity:0.25496689;stroke:#ffffff;stroke-width:195;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+         id="polyline50" />
+      <path
+         transform="matrix(0.04102564,0,0,0.04102564,0.12307692,-0.04102564)"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="M 2600,6001 5,7499 2600,8997 5195,7499 Z"
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Cantarell;fill:#ff6600;fill-opacity:0.25496689;stroke:#ffffff;stroke-width:195;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+         id="polyline48" />
+      <path
+         transform="matrix(0.04102564,0,0,0.04102564,0.12307692,-0.04102564)"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="M 5,7499 V 4503 L 2600,3005 v 2996 z"
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Cantarell;fill:#ff6600;fill-opacity:0.6745098;stroke:#ffffff;stroke-width:195;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+         id="polyline32" />
+      <path
+         transform="matrix(0.04102564,0,0,0.04102564,0.12307692,-0.04102564)"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="M 5195,7499 V 4503 l 2594,1498 v 2996 z"
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Cantarell;fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:195;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+         id="polyline52" />
+      <path
+         transform="matrix(0.04102564,0,0,0.04102564,0.12307692,-0.04102564)"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="m 5195,10495 v 2996 L 2600,11993 V 8997 Z"
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Cantarell;fill:#ff6600;fill-opacity:1;stroke:#ffffff;stroke-width:195;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1"
+         id="polyline54" />
+    </g>
+  </g>
+</svg>

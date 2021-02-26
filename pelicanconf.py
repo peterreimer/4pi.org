@@ -9,10 +9,12 @@ LOG_FILTER = [(logging.info, 'Copying')]
 AUTHOR = u'Peter Reimer'
 SITENAME = u'4pi.org'
 SITESUBTITLE = u'Spherical panoramas'
+TWITTER_USERNAME = '@4pi'
 
-# SITEURL = '/'
-# SITEURL = 'http://localhost/~peter/4pi'
-# SITEURL = 'http://ultra02/~reimer/4pi'
+CURRENT_YEAR = 2021
+
+SITEURL = '/'
+#SITEURL = 'http://localhost/~peter/4pi'
 CSS_FILE = 'app.css'
 TIMEZONE = 'Europe/Berlin'
 
@@ -33,9 +35,10 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 DISPLAY_CATEGORIES_ON_MENU = True
-#MENUITEMS = (
-#    ('Karte', '/'.join((SITEURL,'karte.html'))),
-#)
+DISPLAY_PAGES_ON_MENU = True
+# MENUITEMS = (
+#     ('Karte', '/'.join((SITEURL,'karte.html'))),
+# )
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('PanoTools.org Wiki', 'http://wiki.panotools.org'),
@@ -50,7 +53,6 @@ EXTRA_PATH_METADATA = {
 READERS = {'html': None}
 # Social widget
 SOCIAL = (('GitHub',    'https://github.com/peterreimer'),
-          ('Flickr',    'https://www.flickr.com/photos/4pi'),
           ('Twitter',   'https://twitter.com/4pi'),
           ('360Cities', 'https://www.360cities.net/profile/reimer'),)
 
@@ -67,10 +69,10 @@ ARTICLE_URL     = '{date:%Y}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}/index.html'
 # THEME = 'simple'
 # THEME = 'pelican-default'
-THEME = 'theme'
+THEME = '4pi-theme'
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
-PLUGIN_PATHS = ["plugins"]
+#PLUGIN_PATHS = ["plugins"]
 PLUGINS = ['neighbors', 'pannellum', 'sitemap']
 SITEMAP = {'format': 'xml'}
 
@@ -87,4 +89,3 @@ JSON_FOLDER = 'json'
 SIZES_FOLDER = 'sizes'
 FULLSIZE_PANORAMAS = 'fullsize'
 PREVIEW_PANORAMAS = 'preview'
-

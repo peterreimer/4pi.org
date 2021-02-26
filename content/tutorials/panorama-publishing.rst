@@ -23,7 +23,7 @@ Several steps:
 
   .. code-block:: bash
     
-    $ exiftool -tagsfromfile frame-01.CR2 -all:all -n -Orientation=1 panorama.jpg
+    $ exiftool -tagsfromfile frame-01.CR2 -exif:all -n -Orientation=1 panorama.jpg
     
 * Samyang or zenitar: add metadata to source:
 

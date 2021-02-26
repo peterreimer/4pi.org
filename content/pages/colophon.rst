@@ -1,10 +1,12 @@
 Colophon
 ========
 
+:slug: kolophon
 :date: 2016-07-25
 :status: hidden
+:lang: en
 
-Verwendete Software
+Used Software
 
 * `pelican`_
 * `pannellum`_

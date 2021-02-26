@@ -1,8 +1,10 @@
 Kolophon
 ========
 
+:slug: kolophon
 :date: 2016-07-25
 :status: hidden
+:lang: de
 
 Verwendete Software
 

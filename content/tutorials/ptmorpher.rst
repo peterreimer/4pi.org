@@ -78,7 +78,7 @@ working with Debian Linux and Sun's Java and this works for me:
 You have to select lots of control points for a smooth transition
 between the two images.
 
-.. figure:: {filename}/images/morph1s.jpg
+.. figure:: {static}/images/morph1s.jpg
    :alt: PTPicker Window with control points
    :class: image-process-article-image
 
@@ -110,7 +110,7 @@ victims of spiderman (see next screenshoot, click on it to get a
 magnified view). The triangles are only created in one window, but they
 can be copied to the second window by 'Edit>Copy Triangles'.
 
-.. figure:: {filename}/images/morph2s.jpg
+.. figure:: {static}/images/morph2s.jpg
    :alt: PTPicker Window with control points and triangles
    :class: image-process-article-image
 
@@ -122,7 +122,7 @@ in above screenshot) and going to 'Edit>Remove Triangle' removes those. The next
 screenshot shows the final triangulation, after copying the triangles also to
 the second window.
 
-.. figure:: {filename}/images/morph3s.jpg
+.. figure:: {static}/images/morph3s.jpg
    :alt: PTPicker Window after cleaning up triangles
    :class: image-process-article-image
 
@@ -160,7 +160,7 @@ triangle. There are two blocks of 't' lines, one for each image i0 and i1.
     t 3 17 0 i1
     [...]
 
-Download the `full script file <{filename}/downloads/script.txt>`_, if you want to try it yourself.  
+Download the `full script file <{static}/downloads/script.txt>`_, if you want to try it yourself.  
 
 Morphing
 --------
@@ -190,7 +190,7 @@ one of those portraits ;-)
 | Stoiber  | 100% | 75% | 50% | 25% | 0% |
 +----------+------+-----+-----+-----+----+
 
-.. |Portrait Schröder| image:: {filename}/images/schroeder150.jpg
-.. |Portrait Stoiber| image:: {filename}/images/stoiber150.jpg
-.. |Morphing sequenz| image:: {filename}/images/result.jpg
+.. |Portrait Schröder| image:: {static}/images/schroeder150.jpg
+.. |Portrait Stoiber| image:: {static}/images/stoiber150.jpg
+.. |Morphing sequenz| image:: {static}/images/result.jpg
 

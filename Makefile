@@ -5,8 +5,8 @@ PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
-#OUTPUTDIR=$(BASEDIR)/output
-OUTPUTDIR=$(HOME)/public_html/4pi
+OUTPUTDIR=$(BASEDIR)/output
+#OUTPUTDIR=$(HOME)/public_html/4pi
 TILESDIR=$(HOME)/public_html/tiles
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
@@ -75,7 +75,7 @@ ssh_upload: publish
 
 rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
-	#rsync -e "ssh -p $(SSH_PORT)" -P -rv --delete $(TILESDIR)/ $(SSH_USER)@$(SSH_HOST):$(TILES_TARGET_DIR) --cvs-exclude
+	rsync -e "ssh -p $(SSH_PORT)" -P -rv --delete $(TILESDIR)/ $(SSH_USER)@$(SSH_HOST):$(TILES_TARGET_DIR) --cvs-exclude
 
 dropbox_upload: publish
 	cp -r $(OUTPUTDIR)/* $(DROPBOX_DIR)

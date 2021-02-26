@@ -14,3 +14,8 @@ Fixing EXIF for manual lenses
   
   
 
+* Move images in YYYY/YYYY_mm folder structure
+  
+  .. code-block:: bash
+      
+    $ exiftool  '-Directory<CreateDate' -d %Y/%Y_%m *

@@ -1,3 +1,4 @@
+*.pid
 cache
 output
 my-plugins
@@ -5,9 +6,6 @@ plugins
 content/sizes
 content/panos
 content/fullsize
-content/preview
-*.pid
-*.swp
 *~
 *.py[cod]
 
